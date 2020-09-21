@@ -54,20 +54,20 @@ ro.sys.fw.bg_apps_limit=24
 debug.gralloc.enable_fb_ubwc=1
 persist.device_config.runtime_native.usap_pool_enabled=true
 
-#kernel
+# Kernel Tweaks
 
 ro.kernel.zio=38,108,105,16
 persist.sys.dalvik.vm.lib.2=libart.so
 
 
-#misc
+# Misc
 
 net.dns1=8.8.8.8
 net.dns2=8.8.4.4
 ro.telephony.call_ring.delay=0
 ring.delay=0
 
-#Blek
+# Blek
 debug.performance.tuning=1
 video.accelerate.hw=1
 debug.egl.profiler=1
