@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/carbon/config/common_full_phone.mk)
 
 # Inherit from realme RMX1831
 $(call inherit-product, device/realme/RMX1831/device.mk)
@@ -46,7 +46,7 @@ EVO_SUPPORT_URL := https://t.me/RealmeU1
 CUSTOM_BUILD_TYPE := UNOFFICIAL
 EVO_MAINTAINER := Naveen56
 
-PRODUCT_NAME := aosp_RMX1831
+PRODUCT_NAME := carbon_RMX1831
 PRODUCT_DEVICE := RMX1831
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := realme
@@ -61,7 +61,6 @@ TARGET_VENDOR_DEVICE_NAME := RMX1831
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="RMX1831" \
     PRODUCT_NAME="RMX1831" \
-    PRIVATE_BUILD_DESC="full_oppo6771_18611-user 9 PPR1.180610.011 eng.root.20200722.215443 release-keys"
+    PRIVATE_BUILD_DESC= "full_oppo6771_18611-user 9 PPR1.180610.011 eng.root.20200915.143154 release-keys"
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys"
-
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys"
