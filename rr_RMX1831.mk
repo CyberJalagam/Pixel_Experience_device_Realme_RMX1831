@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Inherit from realme RMX1831
 $(call inherit-product, device/realme/RMX1831/device.mk)
@@ -39,14 +39,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 
-# Realme 1 support group
-EVO_SUPPORT_URL := https://t.me/RealmeU1
-
-# UNOFFICIAL
-CUSTOM_BUILD_TYPE := UNOFFICIAL
-EVO_MAINTAINER := Naveen56
-
-PRODUCT_NAME := aosp_RMX1831
+PRODUCT_NAME := rr_RMX1831
 PRODUCT_DEVICE := RMX1831
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := realme
